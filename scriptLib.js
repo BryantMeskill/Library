@@ -1,3 +1,4 @@
+const addBookBtn = document.querySelector(".open-prompt");
 let theLibrary = [];
 
 function Book(title, author, pages, read) {
@@ -7,6 +8,9 @@ function Book(title, author, pages, read) {
   this.read = read;
 }
 
-function addBook() {}
+addBookBtn.addEventListener("click", () => {
+  const userForm = document.querySelector(".user-form");
+});
 
+function addLibraryBook() {}
 function displayBooks() {}
