@@ -41,6 +41,7 @@ body {
   border-radius: 15px;
   font-size: 50px;
   background-color: #787a91;
+  animation: slide-in 0.5s;
 }
 
 .open-prompt:hover {
@@ -59,7 +60,21 @@ body {
   background-color: #141e61;
   color: #eeeeee;
   font-family: "roboto", sans-serif;
+  font-weight: 300;
   font-size: 25px;
+  animation: slide-in 0.5s;
+}
+
+@keyframes slide-in {
+  from {
+    margin-left: 500px;
+    opacity: 0;
+  }
+
+  to {
+    margin-left: 0px;
+    opacity: 1;
+  }
 }
 
 .hidden {
@@ -69,7 +84,9 @@ body {
 .user-input {
   padding: 5px;
   font-family: "roboto", sans-serif;
-  font-size: 25px;
+  font-size: 23px;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .add-book {
@@ -77,6 +94,7 @@ body {
   border-radius: 10px;
   height: 30px;
   background-color: #eeeeee;
+  font-size: 15px;
 }
 
 .add-book:hover {
@@ -85,4 +103,18 @@ body {
 
 .add-book:active {
   background-color: #b6b4b4;
+}
+
+.user-book {
+}
+
+.book-display {
+  color: #eeeeee;
+  font-family: "roboto", sans-serif;
+  padding: 5px;
+  font-size: 25px;
+  height: 50px;
+  background-color: #141e61;
+  height: 125px;
+  width: auto;
 }
