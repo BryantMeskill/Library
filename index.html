@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@100;400;900&family=Yellowtail&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -23,18 +23,21 @@
     <div class="section">
       <div class="user-form hidden">
         <label for="title">Book Title:</label>
-        <input type="text" name="title" class="user-input" />
+        <input type="text" name="title" class="user-input book-title" />
         <label for="author">Book Author:</label>
-        <input type="text" name="author" class="user-input" />
+        <input type="text" name="author" class="user-input author" />
         <label for="pages">Page(s):</label>
-        <input type="text" name="pages" class="user-input" />
-        <label for="read">Book finished?</label>
-        <input type="checkbox" name="read" class="user-input" />
+        <input type="text" name="pages" class="user-input pages" />
+        <label for="read"
+          >Book finished?
+          <input type="checkbox" name="read" class="user-input read"
+        /></label>
+
         <button class="add-book">Add Book</button>
       </div>
       <button class="open-prompt">+</button>
     </div>
-
+    <div class="user-book"></div>
     <script src="./scriptLib.js"></script>
   </body>
 </html>
