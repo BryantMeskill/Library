@@ -9,7 +9,7 @@ body {
 
 .header {
   border: solid 4px #0f044c;
-  background-color: #141e61;
+  background-color: #0f044c;
   color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 30vh;
+  margin: 20vh;
 }
 
 .open-prompt {
@@ -53,6 +53,10 @@ body {
 }
 
 .user-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   border: solid 5px #0f044c;
@@ -106,15 +110,39 @@ body {
 }
 
 .user-book {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.remove-button {
+  display: block;
+  border: none;
+  border-radius: 10px;
+  height: 30px;
+  background-color: #eeeeee;
+  font-size: 15px;
+}
+
+.remove-button:hover {
+  background-color: #c9c7c7;
+}
+
+.remove-button:active {
+  background-color: #b6b4b4;
 }
 
 .book-display {
+  border: solid 3px #eeeeee;
+  border-radius: 10px;
   color: #eeeeee;
   font-family: "roboto", sans-serif;
+  font-weight: 300;
   padding: 5px;
-  font-size: 25px;
-  height: 50px;
+  font-size: 27px;
   background-color: #141e61;
-  height: 125px;
-  width: auto;
+  height: auto;
+}
+
+.check {
+  transform: scale(1.5);
 }
